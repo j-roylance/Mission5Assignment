@@ -1,0 +1,15 @@
+﻿@model CalculatorViewModel
+
+@{
+    ViewData["Title"] = "Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<input asp-for="Hours" id="hoursInput" min="0" step="1" required>
+<div id="warning"></div>
+<br>
+<div id="chargePerHour">$16</div>
+<br>
+<button type="button" onclick="Calculate()">Calculate!</button>
+<br>
+<div id="total"></div>
